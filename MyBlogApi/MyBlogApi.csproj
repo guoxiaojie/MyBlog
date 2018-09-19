@@ -116,16 +116,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\articleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\blog_ad.cs" />
-    <Compile Include="Models\blog_article.cs" />
-    <Compile Include="Models\blog_category.cs" />
-    <Compile Include="Models\blog_comment.cs" />
-    <Compile Include="Models\blog_links.cs" />
-    <Compile Include="Models\blog_tag.cs" />
-    <Compile Include="Models\nlog_user.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -142,7 +136,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Blog.DAL\Blog.DAL.csproj">
+      <Project>{f956dc9c-91b7-405e-85a2-045df6c374e6}</Project>
+      <Name>Blog.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blog.Model\Blog.Model.csproj">
+      <Project>{6d6ecc2b-fd14-4440-95d0-9d5e0a5c090b}</Project>
+      <Name>Blog.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{a497f3be-8101-4f5e-a25b-f9c40bc38899}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

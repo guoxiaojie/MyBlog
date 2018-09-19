@@ -1,0 +1,9 @@
+E:\WorkSpace\MyBlog\Blog.DAL\bin\Debug\Blog.DAL.dll
+E:\WorkSpace\MyBlog\Blog.DAL\bin\Debug\Blog.DAL.pdb
+E:\WorkSpace\MyBlog\Blog.DAL\bin\Debug\Blog.Model.dll
+E:\WorkSpace\MyBlog\Blog.DAL\bin\Debug\Common.dll
+E:\WorkSpace\MyBlog\Blog.DAL\bin\Debug\Blog.Model.pdb
+E:\WorkSpace\MyBlog\Blog.DAL\bin\Debug\Common.pdb
+E:\WorkSpace\MyBlog\Blog.DAL\obj\Debug\Blog.DAL.csprojResolveAssemblyReference.cache
+E:\WorkSpace\MyBlog\Blog.DAL\obj\Debug\Blog.DAL.dll
+E:\WorkSpace\MyBlog\Blog.DAL\obj\Debug\Blog.DAL.pdb

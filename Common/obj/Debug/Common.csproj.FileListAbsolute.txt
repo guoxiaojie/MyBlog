@@ -1,1 +1,5 @@
 E:\WorkSpace\MyBlog\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+E:\WorkSpace\MyBlog\Common\bin\Debug\Common.dll
+E:\WorkSpace\MyBlog\Common\bin\Debug\Common.pdb
+E:\WorkSpace\MyBlog\Common\obj\Debug\Common.dll
+E:\WorkSpace\MyBlog\Common\obj\Debug\Common.pdb

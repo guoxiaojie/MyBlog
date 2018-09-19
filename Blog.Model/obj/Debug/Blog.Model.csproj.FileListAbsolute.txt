@@ -1,0 +1,5 @@
+E:\WorkSpace\MyBlog\Blog.Model\bin\Debug\Blog.Model.dll
+E:\WorkSpace\MyBlog\Blog.Model\bin\Debug\Blog.Model.pdb
+E:\WorkSpace\MyBlog\Blog.Model\obj\Debug\Blog.Model.csprojResolveAssemblyReference.cache
+E:\WorkSpace\MyBlog\Blog.Model\obj\Debug\Blog.Model.dll
+E:\WorkSpace\MyBlog\Blog.Model\obj\Debug\Blog.Model.pdb

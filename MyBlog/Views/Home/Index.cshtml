@@ -3,15 +3,661 @@
     Layout = null;
 }
 
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <meta charset="UTF-8">
+    <title>博客首页 </title>
+    <link href="~/Content/Css/MyBlog.css" rel="stylesheet" />
+
+
 </head>
 <body>
-    <div> 
+    <!-- 顶部导航开始 -->
+    <header id="b-public-nav" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <div class="hidden-xs b-nav-background"></div>
+                    <ul class="b-logo-code">
+                        <li class="b-lc-start">&lt;?php</li>
+                        <li class="b-lc-echo">echo</li>
+                    </ul>
+                    <p class="b-logo-word">'白俊遥博客'</p>
+                    <p class="b-logo-end">;</p>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav b-nav-parent">
+                    <li class="hidden-xs b-nav-mobile"></li>
+                    <li class="b-nav-cname  ">
+                        <a href="/">首页</a>
+                    </li>
+                    <li class="b-nav-cname ">
+                        <a href="https://baijunyao.com/category/27">PHP</a>
+                    </li>
+                    <li class="b-nav-cname ">
+                        <a href="https://baijunyao.com/category/28">前端</a>
+                    </li>
+                    <li class="b-nav-cname ">
+                        <a href="https://baijunyao.com/category/29">Linux</a>
+                    </li>
+                    <li class="b-nav-cname  b-nav-active ">
+                        <a href="https://baijunyao.com/category/30">技术之外</a>
+                    </li>
+                    <li class="b-nav-cname ">
+                        <a href="https://baijunyao.com/category/31">乱七八糟</a>
+                    </li>
+                    <li class="b-nav-cname ">
+                        <a href="https://baijunyao.com/chat">随言碎语</a>
+                    </li>
+                    <li class="b-nav-cname ">
+                        <a href="https://baijunyao.com/git">开源项目</a>
+                    </li>
+                </ul>
+                <ul id="b-login-word" class="nav navbar-nav navbar-right">
+                    <li class="b-nav-cname b-nav-login">
+                        <div class="hidden-xs b-login-mobile"></div>
+                        <a class="js-login-btn" href="javascript:;">登录</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 顶部导航结束 -->
+
+    <div class="b-h-70"></div>
+
+    <div id="b-content" class="container">
+        <div class="row">
+            <!-- 左侧列表开始 -->
+            <div class="col-xs-12 col-md-12 col-lg-8">
+                <!-- 循环文章列表开始 -->
+                <div class="row b-one-article">
+                    <h3 class="col-xs-12 col-md-12 col-lg-12">
+                        <a class="b-oa-title" href="https://baijunyao.com/article/157" target="_blank">关于梦想；关于从北京离职回郑州；</a>
+                    </h3>
+                    <div class="col-xs-12 col-md-12 col-lg-12 b-date">
+                        <ul class="row">
+                            <li class="col-xs-5 col-md-2 col-lg-3">
+                                <i class="fa fa-user"></i> 白俊遥
+                            </li>
+                            <li class="col-xs-7 col-md-3 col-lg-3">
+                                <i class="fa fa-calendar"></i> 2018-06-24 18:49:02
+                            </li>
+                            <li class="col-xs-5 col-md-2 col-lg-2">
+                                <i class="fa fa-list-alt"></i> <a href="https://baijunyao.com/category/30" target="_blank">技术之外</a>
+                            </li>
+                            <li class="col-xs-7 col-md-5 col-lg-4 ">
+                                <i class="fa fa-tags"></i>
+                                <a class="b-tag-name" href="https://baijunyao.com/tag/56" target="_blank">感想</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-12 col-lg-12">
+                        <div class="row">
+                            <!-- 文章封面图片开始 -->
+                            <div class="col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                                <figure class="b-oa-pic b-style1">
+                                    <a href="https://baijunyao.com/article/157" target="_blank">
+                                        <img src="https://baijunyao.com/uploads/article/20180624/5b2f7716866d6.jpg" alt="白俊遥博客" title="白俊遥博客">
+                                    </a>
+                                    <figcaption>
+                                        <a href="https://baijunyao.com/article/157" target="_blank"></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <!-- 文章封面图片结束 -->
+                            <!-- 文章描述开始 -->
+                            <div class="col-xs-12 col-sm-6  col-md-6 col-lg-8 b-des-read">
+                                朋友问我为什么喜欢北京的什么？我想了想；北京真正的让我认识到什么叫雾霾；北京也让我见识了拥堵；北京还让我接受了1个小时左右的上下班通勤时间；但是能让我忍受北京诸多缺点仍坚持留在北京的只有两个字；梦想；北京是一个有梦想的城市；北京让我看到了人生的上限其实是没有上限；只要肯努力奋斗；生命可以比想象的的更加精彩；有梦想的童鞋真的都应该在北上深这些城市呆上几年；...
+                            </div>
+                            <!-- 文章描述结束 -->
+                        </div>
+                    </div>
+                    <a class=" b-readall" href="https://baijunyao.com/article/157" target="_blank">阅读全文</a>
+                </div>
+                <!-- 循环文章列表结束 -->
+                <!-- 列表分页开始 -->
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 col-lg-12 b-page text-center">
+
+                    </div>
+                </div>
+                <!-- 列表分页结束 -->
+            </div>
+            <!-- 左侧列表结束 -->
+            <!-- 通用右部区域开始 -->
+            <div id="b-public-right" class="col-lg-4 hidden-xs hidden-sm hidden-md">
+                <div class="b-search">
+                    <form class="form-inline" role="form" action="https://baijunyao.com/search" method="get">
+                        <input class="b-search-text" type="text" name="wd">
+                        <input class="b-search-submit" type="submit" value="全站搜索">
+                    </form>
+                </div>
+                <div class="b-qun">
+                    <h4 class="b-title">加入组织</h4>
+                    <ul class="b-all-tname">
+                        <li class="b-qun-or-code">
+                            <img src="https://baijunyao.com/uploads/images/default.png" alt="QQ">
+                        </li>
+                        <li class="b-qun-word">
+                            <p class="b-qun-nuber">
+                                1. 手Q扫左侧二维码
+                            </p>
+                            <p class="b-qun-nuber">
+                                2. 搜Q群：88199093
+                            </p>
+                            <p class="b-qun-code">
+                                3. 点击<a href="//shang.qq.com/wpa/qunwpa?idkey=bba3fea90444ee6caf1fb1366027873fe14e86bada254d41ce67768fadd729ee" target="_blank" rel="nofollow"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="白俊遥博客群" title="白俊遥博客群"></a>
+                            </p>
+                            <p class="b-qun-article">
+                                <a href="https://baijunyao.com/article/124" target="_blank">创建QQ群及捐赠渠道</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="b-tags">
+                    <h4 class="b-title">热门标签</h4>
+                    <ul class="b-all-tname">
+                        <li class="b-tname">
+                            <a class="tstyle-1" href="https://baijunyao.com/tag/20">Linux (7)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-2" href="https://baijunyao.com/tag/21">Centos (4)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-3" href="https://baijunyao.com/tag/22">Apache (5)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-4" href="https://baijunyao.com/tag/23">虚拟主机 (5)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-1" href="https://baijunyao.com/tag/24">wamp (3)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-2" href="https://baijunyao.com/tag/25">励志 (2)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-3" href="https://baijunyao.com/tag/26">html (13)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-4" href="https://baijunyao.com/tag/27">函数 (12)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-1" href="https://baijunyao.com/tag/28">jQuery (3)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-2" href="https://baijunyao.com/tag/29">css (6)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-3" href="https://baijunyao.com/tag/30">ueditor (2)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-4" href="https://baijunyao.com/tag/31">thinkphp (43)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-1" href="https://baijunyao.com/tag/32">MySQL (6)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-2" href="https://baijunyao.com/tag/33">php类 (3)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-3" href="https://baijunyao.com/tag/34">JavaScript (7)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-4" href="https://baijunyao.com/tag/35">读书 (2)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-1" href="https://baijunyao.com/tag/37">js插件 (2)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-2" href="https://baijunyao.com/tag/38">软件 (6)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-3" href="https://baijunyao.com/tag/39">php基础 (13)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-4" href="https://baijunyao.com/tag/40">echart (1)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-1" href="https://baijunyao.com/tag/41">mac (2)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-2" href="https://baijunyao.com/tag/42">laravel (32)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-3" href="https://baijunyao.com/tag/43">观影有感 (1)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-4" href="https://baijunyao.com/tag/44">vue.js (4)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-1" href="https://baijunyao.com/tag/45">node.js (6)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-2" href="https://baijunyao.com/tag/46">git (4)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-3" href="https://baijunyao.com/tag/47">composer (3)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-4" href="https://baijunyao.com/tag/48">phpstudy (1)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-1" href="https://baijunyao.com/tag/49">微信小程序 (1)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-2" href="https://baijunyao.com/tag/50">DNS (1)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-3" href="https://baijunyao.com/tag/51">word (1)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-4" href="https://baijunyao.com/tag/52">pdf (1)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-1" href="https://baijunyao.com/tag/53">模板 (1)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-2" href="https://baijunyao.com/tag/54">旅游 (1)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-3" href="https://baijunyao.com/tag/55">Elasticseach (3)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-4" href="https://baijunyao.com/tag/56">感想 (1)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-1" href="https://baijunyao.com/tag/57">设计模式 (5)</a>
+                        </li>
+                        <li class="b-tname">
+                            <a class="tstyle-2" href="https://baijunyao.com/tag/58">GitHub (1)</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="b-recommend">
+                    <h4 class="b-title">置顶推荐</h4>
+                    <p class="b-recommend-p">
+                        <a class="b-recommend-a" href="https://baijunyao.com/article/131" target="_blank"><span class="fa fa-th-list b-black"></span> 最适合入门的laravel初级教程(一)序言</a>
+                        <a class="b-recommend-a" href="https://baijunyao.com/article/124" target="_blank"><span class="fa fa-th-list b-black"></span> 创建QQ群及捐赠渠道</a>
+                        <a class="b-recommend-a" href="https://baijunyao.com/article/60" target="_blank"><span class="fa fa-th-list b-black"></span> thinkphp的目录结构设计经验总结</a>
+                        <a class="b-recommend-a" href="https://baijunyao.com/article/58" target="_blank"><span class="fa fa-th-list b-black"></span> javascript中的那些让人摸不着头脑的不=</a>
+                        <a class="b-recommend-a" href="https://baijunyao.com/article/55" target="_blank"><span class="fa fa-th-list b-black"></span> 深入解析array_merge函数的用法 php</a>
+                        <a class="b-recommend-a" href="https://baijunyao.com/article/52" target="_blank"><span class="fa fa-th-list b-black"></span> javascript的函数作用域及声明提前</a>
+                        <a class="b-recommend-a" href="https://baijunyao.com/article/42" target="_blank"><span class="fa fa-th-list b-black"></span> php多维数组自定义排序 uasort()</a>
+                        <a class="b-recommend-a" href="https://baijunyao.com/article/29" target="_blank"><span class="fa fa-th-list b-black"></span> apache 开启Gzip网页压缩</a>
+                        <a class="b-recommend-a" href="https://baijunyao.com/article/27" target="_blank"><span class="fa fa-th-list b-black"></span> 查询文章的上下篇Sql语句</a>
+                        <a class="b-recommend-a" href="https://baijunyao.com/article/20" target="_blank"><span class="fa fa-th-list b-black"></span> 以符合人类阅读的方式打印php数组</a>
+                        <a class="b-recommend-a" href="https://baijunyao.com/article/18" target="_blank"><span class="fa fa-th-list b-black"></span> PHP按符号截取字符串的指定部分</a>
+                        <a class="b-recommend-a" href="https://baijunyao.com/article/16" target="_blank"><span class="fa fa-th-list b-black"></span> 一行jQuery代码搞定checkbox 全选和全不选</a>
+                        <a class="b-recommend-a" href="https://baijunyao.com/article/12" target="_blank"><span class="fa fa-th-list b-black"></span> 总结php删除html标签和标签内的内容的方法</a>
+                    </p>
+                </div>
+                <div class="b-comment-list">
+                    <h4 class="b-title">最新评论</h4>
+                    <div>
+                        <ul class="b-new-comment  b-new-commit-first ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/1925.jpg" alt="李狗嗨">
+                            <li class="b-nickname">
+                                李狗嗨<span>1天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/162" target="_blank">php设计模式(四)工厂方法模式</a>中评论
+                            </li>
+                            <li class="b-content">
+                                windows中使用快捷键无用。大神可以说一下是什么，我好去百度搜一下。这个模式...
+                            </li>
+                        </ul>
+                        <ul class="b-new-comment ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/2552.jpg" alt="daji">
+                            <li class="b-nickname">
+                                daji<span>1天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/164" target="_blank">php设计模式(五)抽象工厂模式</a>中评论
+                            </li>
+                            <li class="b-content">
+                                博主你好呀，请问下统计网站下所有文章的总点击数，思路是什么？怎么加到一起呢？
+                            </li>
+                        </ul>
+                        <ul class="b-new-comment ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/791.jpg" alt="Hannibal">
+                            <li class="b-nickname">
+                                Hannibal<span>2天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/157" target="_blank">关于梦想；关于从北京离职回郑州；</a>中评论
+                            </li>
+                            <li class="b-content">
+                                大神 你多大年纪了<img src="https://baijunyao.com/statics/emote/tuzki/2.gif" title="Love" alt="白俊遥博客">
+                            </li>
+                        </ul>
+                        <ul class="b-new-comment ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/410.jpg" alt="永威">
+                            <li class="b-nickname">
+                                永威<span>2天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/164" target="_blank">php设计模式(五)抽象工厂模式</a>中评论
+                            </li>
+                            <li class="b-content">
+                                兄弟们，抢沙发罗。
+                            </li>
+                        </ul>
+                        <ul class="b-new-comment ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/2992.jpg" alt="重来">
+                            <li class="b-nickname">
+                                重来<span>2天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/124" target="_blank">创建QQ群及捐赠渠道</a>中评论
+                            </li>
+                            <li class="b-content">
+                                直接付款加群提示订单生成失败，微信已赞赏，备注qq：977960951
+                            </li>
+                        </ul>
+                        <ul class="b-new-comment ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/2993.jpg" alt="1">
+                            <li class="b-nickname">
+                                1<span>2天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/147" target="_blank">推荐一些免费开源好看的bootstrap...</a>中评论
+                            </li>
+                            <li class="b-content">
+                                第一个模板和beyondAdmin有点像，为什么没有h-ui。挺喜欢第一个的，看...
+                            </li>
+                        </ul>
+                        <ul class="b-new-comment ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/2992.jpg" alt="重来">
+                            <li class="b-nickname">
+                                重来<span>2天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/156" target="_blank">laravel下elasticsearc...</a>中评论
+                            </li>
+                            <li class="b-content">
+                                您好，请问用oderBy排序提示这个该怎么办呢？Article::search(...
+                            </li>
+                        </ul>
+                        <ul class="b-new-comment ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/2991.jpg" alt="默〃">
+                            <li class="b-nickname">
+                                默〃<span>2天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/157" target="_blank">关于梦想；关于从北京离职回郑州；</a>中评论
+                            </li>
+                            <li class="b-content">
+                                可以交换个友链吗？
+                            </li>
+                        </ul>
+                        <ul class="b-new-comment ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/2990.jpg" alt="我不信邪">
+                            <li class="b-nickname">
+                                我不信邪<span>3天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/163" target="_blank">github定义项目语言</a>中评论
+                            </li>
+                            <li class="b-content">
+                                求助下，点击下面表情按钮，选择表情失去焦点后，上面的div文本编辑总是聚焦到第一...
+                            </li>
+                        </ul>
+                        <ul class="b-new-comment ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/1413.jpg" alt="追风筝的人">
+                            <li class="b-nickname">
+                                追风筝的人<span>3天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/157" target="_blank">关于梦想；关于从北京离职回郑州；</a>中评论
+                            </li>
+                            <li class="b-content">
+                                后台  在lnmp上 不支持 pathinfo模式   我把它改为0  就是 改...
+                            </li>
+                        </ul>
+                        <ul class="b-new-comment ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/2990.jpg" alt="我不信邪">
+                            <li class="b-nickname">
+                                我不信邪<span>3天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/163" target="_blank">github定义项目语言</a>中评论
+                            </li>
+                            <li class="b-content">
+                                gdgfdsgfd<img src="https://baijunyao.com/statics/emote/tuzki/2.gif" title="Love" alt="白俊遥博客">
+                            </li>
+                        </ul>
+                        <ul class="b-new-comment ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/2990.jpg" alt="我不信邪">
+                            <li class="b-nickname">
+                                我不信邪<span>3天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/163" target="_blank">github定义项目语言</a>中评论
+                            </li>
+                            <li class="b-content">
+                                dsadsa<img src="https://baijunyao.com/statics/emote/tuzki/3.gif" title="Yeah" alt="白俊遥博客">
+                            </li>
+                        </ul>
+                        <ul class="b-new-comment ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/1413.jpg" alt="追风筝的人">
+                            <li class="b-nickname">
+                                追风筝的人<span>4天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/163" target="_blank">github定义项目语言</a>中评论
+                            </li>
+                            <li class="b-content">
+                                白大神   发现您的博客在lnmp环境上  进不去后台
+                            </li>
+                        </ul>
+                        <ul class="b-new-comment ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/2985.jpg" alt="chenkui-git">
+                            <li class="b-nickname">
+                                chenkui-git<span>4天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/157" target="_blank">关于梦想；关于从北京离职回郑州；</a>中评论
+                            </li>
+                            <li class="b-content">
+                                白大神，thinkphp-blog项目在lnmp环境上跑不起来。
+                            </li>
+                        </ul>
+                        <ul class="b-new-comment ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/1413.jpg" alt="追风筝的人">
+                            <li class="b-nickname">
+                                追风筝的人<span>5天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/157" target="_blank">关于梦想；关于从北京离职回郑州；</a>中评论
+                            </li>
+                            <li class="b-content">
+                                大神  你的thinkphp版本的博客  是不是  在lnmp跑不起来   我怎...
+                            </li>
+                        </ul>
+                        <ul class="b-new-comment ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/2987.jpg" alt="0">
+                            <li class="b-nickname">
+                                0<span>5天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/159" target="_blank">php设计模式(二)单例模式</a>中评论
+                            </li>
+                            <li class="b-content">
+                                [白俊遥博客]
+                            </li>
+                        </ul>
+                        <ul class="b-new-comment ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/2984.jpg" alt="Scofield">
+                            <li class="b-nickname">
+                                Scofield<span>6天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/124" target="_blank">创建QQ群及捐赠渠道</a>中评论
+                            </li>
+                            <li class="b-content">
+                                已赞赏 qq:114641713 微信:my0563
+                            </li>
+                        </ul>
+                        <ul class="b-new-comment ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/2118.jpg" alt="有问题向你咨询">
+                            <li class="b-nickname">
+                                有问题向你咨询<span>6天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/162" target="_blank">php设计模式(四)工厂方法模式</a>中评论
+                            </li>
+                            <li class="b-content">
+                                不错呦
+                            </li>
+                        </ul>
+                        <ul class="b-new-comment ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/2981.jpg" alt="ゝ。No_pole">
+                            <li class="b-nickname">
+                                ゝ。No_pole<span>6天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/77" target="_blank">thinkphp整合系列之微信扫码支付</a>中评论
+                            </li>
+                            <li class="b-content">
+                                为什么支付成功了  没有走异步 地址看了好多遍了 异步地址肯定没错
+                            </li>
+                        </ul>
+                        <ul class="b-new-comment ">
+                            <img class="b-head-img js-head-img" src="https://baijunyao.com/uploads/avatar/default.jpg" _src="https://baijunyao.com/uploads/avatar/2946.jpg" alt="花舞千魂殇">
+                            <li class="b-nickname">
+                                花舞千魂殇<span>7天前</span>
+                            </li>
+                            <li class="b-nc-article">
+                                在<a href="https://baijunyao.com/article/141" target="_blank">最适合入门的Laravel初级教程(十)...</a>中评论
+                            </li>
+                            <li class="b-content">
+                                我也是 一看到集合就想转为数组 ， 但是经过阿婆主介绍 发现这个集合真的很潮啊
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="b-link">
+                    <h4 class="b-title">友情链接</h4>
+                    <p>
+                        <a class="b-link-a" href="http://laravelacademy.org" target="_blank"><span class="fa fa-link b-black"></span> Laravel学院</a>
+                        <a class="b-link-a" href="http://www.awaimai.com" target="_blank"><span class="fa fa-link b-black"></span> 歪麦博客</a>
+                        <a class="b-link-a" href="http://wujunze.com" target="_blank"><span class="fa fa-link b-black"></span> 吴钧泽博客</a>
+                        <a class="b-link-a" href="http://loveteemo.com/" target="_blank"><span class="fa fa-link b-black"></span> 青春博客</a>
+                        <a class="b-link-a" href="http://zqiqi.cn/" target="_blank"><span class="fa fa-link b-black"></span> 七七</a>
+                        <a class="b-link-a" href="http://www.payhearts.com" target="_blank"><span class="fa fa-link b-black"></span> 麦剑雄的个人博客</a>
+                        <a class="b-link-a" href="http://www.koukousky.com" target="_blank"><span class="fa fa-link b-black"></span> koukou的博客</a>
+                        <a class="b-link-a" href="http://dongguagua.com" target="_blank"><span class="fa fa-link b-black"></span> 咚呱呱</a>
+                        <a class="b-link-a" href="http://www.phpernote.com" target="_blank"><span class="fa fa-link b-black"></span> php程序员的笔记</a>
+                        <a class="b-link-a" href="http://www.numberer.net/" target="_blank"><span class="fa fa-link b-black"></span> 第二导航网</a>
+                        <a class="b-link-a" href="http://www.mafutian.net" target="_blank"><span class="fa fa-link b-black"></span> 马富天博客</a>
+                        <a class="b-link-a" href="http://baagee.vip" target="_blank"><span class="fa fa-link b-black"></span> BaAGee博客</a>
+                        <a class="b-link-a" href="https://www.phpsong.com" target="_blank"><span class="fa fa-link b-black"></span> 小松博客</a>
+                        <a class="b-link-a" href="http://www.blogxuan.com/" target="_blank"><span class="fa fa-link b-black"></span> 玄玄博客</a>
+                        <a class="b-link-a" href="http://huanglianqiu.com" target="_blank"><span class="fa fa-link b-black"></span> 黄浩博客</a>
+                        <a class="b-link-a" href="http://www.023xs.cn" target="_blank"><span class="fa fa-link b-black"></span> 小张个人博客_不忘初心</a>
+                        <a class="b-link-a" href="http://zixuephp.net" target="_blank"><span class="fa fa-link b-black"></span> php自学网</a>
+                        <a class="b-link-a" href="https://lulublog.cn" target="_blank"><span class="fa fa-link b-black"></span> lulublog</a>
+                        <a class="b-link-a" href="http://www.php20.cn" target="_blank"><span class="fa fa-link b-black"></span> 仙士可博客</a>
+                        <a class="b-link-a" href="http://www.hotxf.com" target="_blank"><span class="fa fa-link b-black"></span> 小风博客</a>
+                        <a class="b-link-a" href="https://www.708034.cn/" target="_blank"><span class="fa fa-link b-black"></span> 二宝博客</a>
+                        <a class="b-link-a" href="http://www.hxinq.com/" target="_blank"><span class="fa fa-link b-black"></span> 黄信强个人博客</a>
+                        <a class="b-link-a" href="http://laysonx.com" target="_blank"><span class="fa fa-link b-black"></span> 李鑫博客</a>
+                        <a class="b-link-a" href="http://www.chinacion.cn" target="_blank"><span class="fa fa-link b-black"></span> 赵华伟自媒体博客</a>
+                        <a class="b-link-a" href="https://fengkui.net" target="_blank"><span class="fa fa-link b-black"></span> 冯奎博客</a>
+                        <a class="b-link-a" href="http://chenxuhou.com" target="_blank"><span class="fa fa-link b-black"></span> 程序猴博客</a>
+                        <a class="b-link-a" href="https://her.ziv-web.cc" target="_blank"><span class="fa fa-link b-black"></span> ziv Blog</a>
+                        <a class="b-link-a" href="http://www.yangqq.com" target="_blank"><span class="fa fa-link b-black"></span> 杨青个人博客</a>
+                    </p>
+                </div>
+            </div>
+            <!-- 通用右部区域结束 -->
+        </div>
+
     </div>
+    <!-- 主体部分结束 -->
+    <!-- 通用底部开始 -->
+    <footer id="b-foot">
+        <div class="container">
+            <div class="row b-content">
+                <dl class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <dt>权益</dt>
+                    <dd>许可协议：<a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh">CC BY-NC 4.0</a></dd>
+                    <dd>版权所有：© 2014-2018 baijunyao.com</dd>
+                    <dd>网站备案：豫ICP备14009546号-3</dd>
+                    <dd>联系邮箱：<a href="mailto:baijunyao@baijunyao.com">baijunyao@baijunyao.com</a></dd>
+                </dl>
+
+                <dl class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <dt>架构</dt>
+                    <dd>项目名称：<a rel="nofollow" href="https://github.com/baijunyao/laravel-bjyblog" target="_blank">laravel-bjyblog</a></dd>
+                    <dd>版本分支：v5.5.3.0-test</dd>
+                    <dd>项目作者：<a href="https://baijunyao.com">白俊遥</a></dd>
+                    <dd>主题名称：<a rel="nofollow" href="https://github.com/baijunyao/blog-theme-blueberry">blog-theme-blueberry</a></dd>
+                    <dd>主题作者：<a href="https://baijunyao.com">白俊遥</a></dd>
+                </dl>
+
+                <dl class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <dt>统计</dt>
+                    <dd>文章总数：143</dd>
+                    <dd>评论总数：3658</dd>
+                    <dd>登录用户：2985</dd>
+                    <dd>随言碎语：39</dd>
+                </dl>
+            </div>
+        </div>
+        <a class="go-top fa fa-angle-up animated jello" href="javascript:;"></a>
+    </footer>
+    <!-- 通用底部结束 -->
+    <!-- 登录模态框开始 -->
+    <div class="modal fade" id="b-modal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content row">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title b-ta-center" id="myModalLabel">无需注册，用以下帐号即可直接登录</h4>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12 b-login-row">
+                    <ul class="row">
+                        <li class="col-xs-6 col-md-4 col-lg-4 b-login-img">
+                            <a href="https://baijunyao.com/auth/oauth/redirectToProvider/qq"><img src="https://baijunyao.com/images/home/qq-login.png" alt="QQ登录" title="QQ登录"></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4 col-lg-4 b-login-img">
+                            <a href="https://baijunyao.com/auth/oauth/redirectToProvider/weibo"><img src="https://baijunyao.com/images/home/sina-login.png" alt="微博登录" title="微博登录"></a>
+                        </li>
+                        <li class="col-xs-6 col-md-4 col-lg-4 b-login-img">
+                            <a href="https://baijunyao.com/auth/oauth/redirectToProvider/github"><img src="https://baijunyao.com/images/home/github-login.jpg" alt="github登录" title="github登录"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登录模态框结束 -->
+
+    <script src="/js/app.js?id=a99d87132448247670a9"></script>
+    <!-- 百度统计开始 -->
+    @*<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?c3338ec467285d953aba86d9bd01cd93";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+    </script>*@
+    <!-- 百度统计结束 -->
+
+
 </body>
 </html>
