@@ -36,7 +36,7 @@ namespace Blog.Model
         private int? _is_recommend;
         private DateTime? _date_publish;
         private string _username;
-        private int? _category;
+        private string _category;
         private string _tag;
         private int? _isdel;
         /// <summary>
@@ -106,7 +106,7 @@ namespace Blog.Model
         /// <summary>
         /// 
         /// </summary>
-        public int? category
+        public string category
         {
             set { _category = value; }
             get { return _category; }

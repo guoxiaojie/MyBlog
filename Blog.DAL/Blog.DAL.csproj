@@ -41,7 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="articleDal.cs" />
+    <Compile Include="categoryDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tagDal.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Blog.Model\Blog.Model.csproj">

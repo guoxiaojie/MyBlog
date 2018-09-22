@@ -18,10 +18,12 @@ namespace Blog.DAL
             {
                 where = " 1=1";
             }
+            where += " and isdel=0";
             int n = 0;
+            string filds= "id,title,[desc],content,click_count,is_recommend,date_publish,username,tag,(select name from blog_category where id = category) as category,isdel";
             //文章列表
             SqlParameter[] sp = {
-            new SqlParameter ("@TableFields", "*"),
+            new SqlParameter ("@TableFields", filds),
             new SqlParameter ("@TableName", "blog_article"),
             new SqlParameter ("@SqlWhere", where),
             new SqlParameter ("@OrderBy", "id"),

@@ -1,5 +1,6 @@
 ﻿using Blog.DAL;
 using Blog.Model;
+using MyBlogApi.Filter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,7 @@ namespace MyBlogApi.Controllers
         /// <param name="PageSize">页容量</param>
         /// <param name="where">查询条件</param>
         /// <returns></returns>
+        [CrossSite]//跨域设置
         [HttpGet]
         public CommonList GetaticleList(int pageIndex, int PageSize, string where)
         {
@@ -26,6 +28,8 @@ namespace MyBlogApi.Controllers
             CommonList Result = dal.GetarticleList(pageIndex, PageSize, where);
             return Result;
         }
+
+
 
     }
 }
