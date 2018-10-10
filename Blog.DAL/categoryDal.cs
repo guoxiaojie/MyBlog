@@ -20,5 +20,7 @@ namespace Blog.DAL
             List<blog_category> result = SQLHelper.ExcuteList<blog_category>(sql);
             return result;
         }
+
+
     }
 }
